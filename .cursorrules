@@ -1,0 +1,56 @@
+# 基础编辑器设置
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+insert_final_newline = true
+max_line_length = 100
+
+# JavaScript/TypeScript 相关规则
+[*.{js,jsx,ts,tsx}]
+quote_type = single
+semicolon = true
+trailing_comma = all
+bracket_spacing = true
+arrow_parens = always
+jsx_single_quote = false
+jsx_bracket_same_line = false
+
+# CSS/SCSS/Less 规则
+[*.{css,scss,less}]
+quote_type = double
+block_closing_brace_newline_after = always
+color_hex_case = lower
+property_no_vendor_prefix = true
+
+# HTML 规则
+[*.{html,htm}]
+quote_type = double
+max_line_length = 120
+
+# Markdown 规则
+[*.md]
+trim_trailing_whitespace = false
+max_line_length = off
+
+# JSON/YAML 配置文件规则
+[*.{json,yml,yaml}]
+indent_size = 2
+insert_final_newline = true
+
+# 特殊文件规则
+[{package.json,package-lock.json,yarn.lock,pnpm-lock.yaml}]
+indent_size = 2
+indent_style = space
+
+# 忽略规则
+[{dist,build,coverage}/**]
+charset = unset
+end_of_line = unset
+indent_size = unset
+indent_style = unset
+trim_trailing_whitespace = unset
